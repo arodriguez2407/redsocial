@@ -8,7 +8,21 @@
 </head>
 <body>
 
-<%= yield %>
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container">
+  			<a class="navbar-brand" href="#">Redsocial</a>
+  			<ul class="nav navbar-nav">
+				<li class="active"><%= link_to "Status", statuses_path %></li>
+			</ul>
+  		</div>
+	</nav>
+	
+	<div class="container">
+		<%= yield %>
+	</div>
+	
 
 </body>
 </html>
